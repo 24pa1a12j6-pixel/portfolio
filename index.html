@@ -1,0 +1,284 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lahari Putta Portfolio</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:#0f172a;
+            color:white;
+            line-height:1.6;
+        }
+
+        header{
+            background:linear-gradient(135deg,#1e3a8a,#7e22ce);
+            text-align:center;
+            padding:60px 20px;
+        }
+
+        header h1{
+            font-size:3rem;
+        }
+
+        header p{
+            font-size:1.2rem;
+            margin:10px 0;
+        }
+
+        .btn{
+            display:inline-block;
+            background:white;
+            color:#1e3a8a;
+            padding:12px 25px;
+            margin-top:15px;
+            border-radius:30px;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        nav{
+            background:#111827;
+            padding:15px;
+            text-align:center;
+            position:sticky;
+            top:0;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
+
+        section{
+            padding:50px 10%;
+        }
+
+        h2{
+            color:#a855f7;
+            margin-bottom:20px;
+            border-bottom:2px solid #a855f7;
+            display:inline-block;
+            padding-bottom:5px;
+        }
+
+        .card-container{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .card{
+            background:#1e293b;
+            padding:20px;
+            border-radius:15px;
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+        }
+
+        .skills span{
+            display:inline-block;
+            background:#7e22ce;
+            padding:10px 15px;
+            margin:8px;
+            border-radius:20px;
+        }
+
+        footer{
+            background:#111827;
+            text-align:center;
+            padding:20px;
+        }
+
+        .contact p{
+            margin:10px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <header>
+        <h1>Lahari Putta</h1>
+        <p>B.Tech Information Technology Student</p>
+        <p>Quantum Computing Enthusiast | Java Developer | Python Developer</p>
+
+        <a href="Resume.pdf" class="btn" download>
+            Download Resume
+        </a>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certificates</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am Lahari Putta, currently pursuing B.Tech in Information
+            Technology at Vishnu Institute of Technology, Bhimavaram.
+            I am passionate about Quantum Computing, Artificial Intelligence,
+            Java Development and Python Programming. I enjoy learning
+            emerging technologies and solving real-world problems.
+        </p>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <h2>Education</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>B.Tech - IT</h3>
+                <p>Vishnu Institute of Technology</p>
+                <p>2024 - 2028</p>
+                <p>CGPA: 8.96</p>
+            </div>
+
+            <div class="card">
+                <h3>Intermediate</h3>
+                <p>Pragathi Junior College</p>
+                <p>2022 - 2024</p>
+                <p>95.7%</p>
+            </div>
+
+            <div class="card">
+                <h3>SSC</h3>
+                <p>Montessori English Medium School</p>
+                <p>2021 - 2022</p>
+                <p>85%</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="skills">
+            <span>Java</span>
+            <span>Python</span>
+            <span>Qiskit</span>
+            <span>Quantum Computing</span>
+            <span>Prompt Engineering</span>
+            <span>AI & ML</span>
+            <span>HTML</span>
+            <span>CSS</span>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>Bell State Generator</h3>
+                <p>
+                    Developed a quantum circuit using Qiskit
+                    to generate Bell States.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Quantum Teleportation</h3>
+                <p>
+                    Implemented quantum teleportation concepts
+                    using quantum computing principles.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>LLM Agents</h3>
+                <p>
+                    Built AI-powered Large Language Model agents
+                    for task automation and intelligent responses.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications">
+        <h2>Certifications</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                Quantum Computing Phase 1 - WISER
+            </div>
+
+            <div class="card">
+                Quantum Computing Phase 2 - WISER
+            </div>
+
+            <div class="card">
+                AICTE Quantum Computing Internship
+            </div>
+
+            <div class="card">
+                Python Development Internship - ShadowFox
+            </div>
+
+            <div class="card">
+                Java Certification
+            </div>
+
+            <div class="card">
+                Prompt Engineering Certification
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+
+        <p>📧 Email: plaharitnk@gmail.com</p>
+        <p>📱 Phone: +91 9885627779</p>
+        <p>📍 Tanuku, Andhra Pradesh, India</p>
+
+        <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/lahari-putta"
+               target="_blank"
+               style="color:#a855f7;">
+                lahari-putta
+            </a>
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Lahari Putta | Portfolio Website</p>
+    </footer>
+
+</body>
+</html>
+```
